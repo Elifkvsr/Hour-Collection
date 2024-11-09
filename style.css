@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ingrid+Darling&family=Rubik+Wet+Paint&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colors: #d8a787;
+}
+
+
+@font-face {
+    font-family: camton;
+    src: url(font/CamptonExtraBold.otf);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: var(--colors);
+    font-family: "Dancing Script", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    position: relative;
+    width: 70%;
+    height: 80%;
+    background: var(--colors);
+    box-shadow: 0px 0px 15px #917563;
+    border-radius: 20px;
+    display: flex;
+}
+
+header .left-slide,
+.right-slide {
+    width: 70%;
+    height: 100%;
+    background: #1e1e1e;
+    border-radius: 20px 36% 39% 20px;
+}
+
+header .right-slide {
+    width: 30%;
+    border-radius: 47% 20px 20px 50%;
+}
+
+header .main_watch {
+    position: absolute;
+    right: 17%;
+    top: 12.7%;
+    filter: drop-shadow(0px 0px 3px #000);
+}
+
+header .left-slide nav {
+    width: 90%;
+    height: 10%;
+    /* border: 1px solid #fff; */
+    margin: auto;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+header .left-slide nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 20px;
+}
+
+header .left-slide nav ul li {
+    padding-left: 30px;
+}
+
+header .left-slide nav ul li a {
+    text-decoration: none;
+    color: rgba(167, 167, 167);
+    font-size: 10px;
+    font-weight: 500;
+    transition: .3s linear;
+}
+
+header .left-slide nav ul li a:hover {
+    color: #fff;
+}
+
+header .left-slide nav .logo {
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+header .left-slide section {
+    width: 90%;
+    height: 70%;
+    /* border: 1px solid #fff; */
+    margin: auto;
+    display: flex;
+}
+
+header .left-slide section .lag,
+.content {
+    /* width: 5px; */
+    height: 100%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    margin-top: 5%;
+}
+
+head .left-slide section .content {
+    margin-left: 15%
+}
+
+header .left-slide section .lag a {
+    text-decoration: none;
+    color: rgba(167, 167, 167);
+    font-size: 12px;
+    padding: 8px 0px;
+    transform: rotate(-90deg);
+    transition: .3s linear;
+}
+
+header .left-slide section .lag a:hover {
+    color: #fff;
+}
+
+header .left-slide section .lag a:nth-child(1) {
+    color: #fff;
+}
+
+header .left-slide section .content h1 {
+    color: #fff;
+    font-family: camton;
+    font-size: 100px;
+    line-height: 80px;
+}
+
+header .left-slide section .content svg {
+    height: 100px;
+    /* border: 1px solid #fff; */
+}
+
+header .left-slide section .content svg text {
+    font-size: 100px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    fill: transparent;
+    stroke: #fff;
+    animation: effect 2.4s linear forwards;
+}
+
+
+@keyframes effect {
+    0% {
+        stroke-dasharray: 0 70%;
+    }
+
+    100% {
+        stroke-dasharray: 50% 0;
+        stroke-dashoffset: 10%;
+    }
+}
+
+header .left-slide section .content h6 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+header .left-slide footer {
+    width: 90%;
+    height: 20%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header .left-slide footer .foot_bx {
+    position: relative;
+    height: 100%;
+    color: rgba(167, 167, 167);
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+header .left-slide footer .foot_bx h4 {
+    font-size: 10px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header .left-slide footer .foot_bx h4 img {
+    width: 11px;
+    margin: 0px 0px 2px 5px;
+}
+
+header .left-slide footer .foot_bx .img {
+    position: absolute;
+    width: 250px;
+    height: 80px;
+    left: 18%;
+    bottom: 0px;
+    transition: .1s linear;
+}
+
+header .right-slide {
+    border: 1px solid #fff;
+}
+
+header .right-slide ul {
+    width: 90%;
+    height: 10%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+header .right-slide ul li {
+    padding: 0px 0px 0px 30px;
+}
+
+header .right-slide ul li a {
+    text-decoration: none;
+    color: rgba(167, 167, 167);
+    font-size: 15px;
+    font-weight: 500;
+    transition: .3s linear;
+}
+
+header .right-slide ul li a:hover {
+    color: #fff;
+}
+
+header .right-slide ul li:nth-child(2) a {
+    position: relative;
+    margin-left: 15px;
+}
+
+header .right-slide ul li:nth-child(2) a::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2.5px;
+    background: rgba(167, 167, 167);
+    right: 0px;
+    border-radius: 20px;
+    top: 3px;
+}
+
+header .right-slide ul li:nth-child(2) a::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2.5px;
+    background: rgba(167, 167, 167);
+    right: 0;
+    border-radius: 20px;
+    top: 4px;
+}
+
+header .right-slide section {
+    position: relative;
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .right-slide section .bx {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    margin-top: 45px;
+    box-shadow: inset 0px 1px 0px rgba(167, 167, 167), inset 0px -1px 0px rgba(167, 167, 167), inset 1px 0px 0px rgba(167, 167, 167), inset -1px 0px 0px rgba(167, 167, 167);
+    display: flex;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+header .right-slide section .bx::-webkit-scrollbar {
+    display: none;
+}
+
+header .right-slide section .bx .scroll_watch {
+    min-width: 70px;
+    height: 100px;
+    margin: -2px 15px 0px 15px;
+    cursor: pointer;
+}
+
+header .right-slide section .btn_le {
+    position: absolute;
+    border: none;
+    outline: none;
+    background: none;
+    transform: rotate(-90deg);
+    top: 35%;
+    cursor: pointer;
+}
+
+header .right-slide section .btn_le:nth-child(2) {
+    transform: rotate(90deg);
+    top: 73%;
+    right: 33%;
+}
+
+
+header .right-slide section .btn_le img {
+    width: 14px;
+}
+
+header .right-slide footer {
+    width: 90%;
+    height: 20%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 15px;
+}
+
+header .right-slide footer h3 {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .right-slide footer h3 span {
+    font-size: 13px;
+    margin: 0px 2px;
+}
+
+header .add_to_cart {
+    position: absolute;
+    right: 26.5%;
+    bottom: 4%;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 600;
+    cursor: pointer;
+}
